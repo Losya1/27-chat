@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <fstream>
+#include <thread>
 #include <WinSock2.h>
 #include <WS2tcpip.h>
 #include <vector>
@@ -15,9 +16,8 @@ MYSQL_ROW row;
 
 class Locker {
 private:
-	std::vector <std::string> messages;
+	std::vector <std::string> logs;
 public:
-	void add_message() {
-
-	}
+	void add_log(std::string log);
+	void show_log ();
 };

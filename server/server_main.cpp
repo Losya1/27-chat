@@ -112,6 +112,7 @@ int main() {
 	mysql_set_character_set(&mysql, "utf8");
 	std::cout << "connection characterset: " << mysql_character_set_name(&mysql) << std::endl;
 
+	Locker locker;
 
 	std::vector <char> Client_message(BUFF_SIZE);
 	short smes = 0;
@@ -125,10 +126,8 @@ int main() {
 			std::cout << Client_message.data() << std::endl;
 			x = Client_message.data();
 			mysql_query(&mysql, "INSERT INTO user(id, name) values(default, x)");
-		}
 
-		if (Client_message[0] == '2') {
-			Client_message.erase(Client_message.begin());
+			recv(ClientConn, Client_message.data(), BUFF_SIZE, 0);
 
 			smes = send(ClientConn, Client_message.data(), BUFF_SIZE, 0);
 
@@ -152,14 +151,22 @@ int main() {
 			}
 		}
 
-		if (Client_message[0] == '4') {
+		if (Client_message[0] == '3') {
 			Client_message.erase(Client_message.begin());
 			std::cout << Client_message.data() << std::endl;
+
+			locker.add_log(Client_message.data());
+
 			smes = send(ClientConn, Client_message.data(), BUFF_SIZE, 0);
 
 			if (smes == SOCKET_ERROR) {
 				std::cout << "Can't send message to Client. Error # " << WSAGetLastError() << std::endl;
 			}
+		}
+
+		if (Client_message[0] == '4') {
+			Client_message.erase(Client_message.begin());
+
 		}
 	}
 
