@@ -13,11 +13,3 @@ const short BUFF_SIZE = 256;
 int erStat;
 MYSQL_RES* res;
 MYSQL_ROW row;
-
-class Locker {
-private:
-	std::vector <std::string> logs;
-public:
-	void add_log(std::string log);
-	void show_log ();
-};

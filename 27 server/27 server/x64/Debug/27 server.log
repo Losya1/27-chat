@@ -1,0 +1,46 @@
+﻿  server_functions.cpp
+C:\Users\losya\source\repos\27 server\27 server\server_header.h(14,10): error C2143: синтаксическая ошибка: отсутствие ";" перед "*"
+C:\Users\losya\source\repos\27 server\27 server\server_header.h(14,10): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\losya\source\repos\27 server\27 server\server_header.h(14,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\losya\source\repos\27 server\27 server\server_header.h(15,14): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\losya\source\repos\27 server\27 server\server_header.h(15,11): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "row"
+C:\Users\losya\source\repos\27 server\27 server\server_functions.cpp(3,6): error C2653: Locker: не является именем класса или пространства имен
+C:\Users\losya\source\repos\27 server\27 server\server_functions.cpp(4,2): error C2065: logs: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_functions.cpp(7,6): error C2653: Locker: не является именем класса или пространства имен
+C:\Users\losya\source\repos\27 server\27 server\server_functions.cpp(11,15): error C2065: logs: необъявленный идентификатор
+  server_main.cpp
+C:\Users\losya\source\repos\27 server\27 server\server_header.h(14,10): error C2143: синтаксическая ошибка: отсутствие ";" перед "*"
+C:\Users\losya\source\repos\27 server\27 server\server_header.h(14,10): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\losya\source\repos\27 server\27 server\server_header.h(14,15): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\losya\source\repos\27 server\27 server\server_header.h(15,14): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\losya\source\repos\27 server\27 server\server_header.h(15,11): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "row"
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(98,2): error C2065: MYSQL: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(98,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mysql"
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(98,8): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(99,14): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(99,2): error C3861: mysql_init: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(101,7): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(105,27): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(105,7): error C3861: mysql_real_connect: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(106,68): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(106,55): error C3861: mysql_error: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(112,27): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(112,2): error C3861: mysql_set_character_set: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(113,72): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(113,46): error C3861: mysql_character_set_name: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(132,17): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(132,4): error C3861: mysql_query: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(144,17): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(144,4): error C3861: mysql_query: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(146,17): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(146,4): error C3861: mysql_query: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(148,34): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(148,14): error C3861: mysql_store_result: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(149,12): error C2065: row: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(149,18): error C3861: mysql_fetch_row: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(150,26): error C3861: mysql_num_fields: идентификатор не найден
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(151,7): error C2065: cout: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(151,15): error C2065: row: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(177,15): error C2065: mysql: необъявленный идентификатор
+C:\Users\losya\source\repos\27 server\27 server\server_main.cpp(177,2): error C3861: mysql_close: идентификатор не найден
+  Создание кода...

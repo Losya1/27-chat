@@ -112,7 +112,11 @@ int main() {
 	mysql_set_character_set(&mysql, "utf8");
 	std::cout << "connection characterset: " << mysql_character_set_name(&mysql) << std::endl;
 
-	Locker locker;
+	//fstream
+
+	std::fstream logs("logs.txt");
+
+	//main
 
 	std::vector <char> Client_message(BUFF_SIZE);
 	short smes = 0;
@@ -155,7 +159,7 @@ int main() {
 			Client_message.erase(Client_message.begin());
 			std::cout << Client_message.data() << std::endl;
 
-			locker.add_log(Client_message.data());
+			logs << (Client_message.data()) << std::endl;
 
 			smes = send(ClientConn, Client_message.data(), BUFF_SIZE, 0);
 
@@ -171,6 +175,7 @@ int main() {
 	}
 
 	mysql_close(&mysql);
+	logs.close();
 
 	closesocket(ServSock);
 	closesocket(ClientConn);
