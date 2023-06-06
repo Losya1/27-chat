@@ -115,6 +115,9 @@ int main() {
 	//fstream
 
 	std::fstream logs("logs.txt");
+	if (!logs) {
+		std::cout << "Error: missing logs.txt" << std::endl;
+	}
 
 	//main
 
@@ -159,7 +162,8 @@ int main() {
 			Client_message.erase(Client_message.begin());
 			std::cout << Client_message.data() << std::endl;
 
-			logs << (Client_message.data()) << std::endl;
+			std::thread t (logs << (Client_message.data()) << std::endl);
+			t.join();
 
 			smes = send(ClientConn, Client_message.data(), BUFF_SIZE, 0);
 
