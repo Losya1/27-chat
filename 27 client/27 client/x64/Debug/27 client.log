@@ -1,0 +1,9 @@
+﻿  functions.cpp
+C:\Users\losya\source\repos\Chat-TCP-mysql\client\functions.cpp(105,3): error C2360: пропуск инициализации "t" из-за метки "case"
+C:\Users\losya\source\repos\Chat-TCP-mysql\client\functions.cpp(102,17): message : см. объявление "t"
+C:\Users\losya\source\repos\Chat-TCP-mysql\client\functions.cpp(119,3): error C2360: пропуск инициализации "t" из-за метки "case"
+C:\Users\losya\source\repos\Chat-TCP-mysql\client\functions.cpp(102,17): message : см. объявление "t"
+C:\Users\losya\source\repos\Chat-TCP-mysql\client\functions.cpp(129,3): error C2360: пропуск инициализации "t" из-за метки "case"
+C:\Users\losya\source\repos\Chat-TCP-mysql\client\functions.cpp(102,17): message : см. объявление "t"
+C:\Users\losya\source\repos\Chat-TCP-mysql\client\functions.cpp(133,3): error C2361: пропуск инициализации "t" из-за метки "default"
+C:\Users\losya\source\repos\Chat-TCP-mysql\client\functions.cpp(102,17): message : см. объявление "t"
